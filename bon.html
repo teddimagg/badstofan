@@ -1,0 +1,80 @@
+<head>
+  <title>bon</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Velkomin/n</h1>
+  {{> timeTable}}
+</body>
+
+<template name="timeTable">
+	<table id="tt">
+		<tr class="days">
+			<td ></td>
+			<td>Mánudagur</td>
+			<td>Þriðjudagur</td>
+			<td>Miðvikudagur</td>
+			<td>Fimmtudagur</td>
+			<td>Föstudagur</td>
+			<td>Laugardagur</td>
+			<td>Sunnudagur</td>
+		</tr>
+		<tr class="dates">
+			<td></td>
+			<td id="1"></td>
+			<td id="2"></td>
+			<td id="3"></td>
+			<td id="4"></td>
+			<td id="5"></td>
+			<td id="6"></td>
+			<td id="7"></td>
+		</tr>
+		<tr class="norm">
+			<td><p>8:00 -</p><p>9:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>9:00 -</p><p>10:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>10:00 -</p><p>11:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>11:00 -</p><p>12:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>12:00 -</p><p>13:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>13:00 -</p><p>14:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>14:00 -</p><p>15:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>15:00 -</p><p>16:00</p></td>
+			{{> row}}
+		</tr>
+		<tr class="norm">
+			<td><p>16:00 -</p><p>17:00</p></td>
+			{{> row}}
+		</tr>
+	</table>
+</template>
+
+<template name="row">
+<td class="mon"></td>
+<td class="tue"></td>
+<td class="wed"></td>
+<td class="thu"></td>
+<td class="fri"></td>
+<td class="sat"></td>
+<td class="sun"></td>
+</template>
